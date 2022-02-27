@@ -1,7 +1,7 @@
 int sensorPin = 0;
 int sensorValue = 0;
 float EMA_a = 0.3;
-int EMA_S = 0;
+int EMA_S = analogRead(sensorPin);
 
 void setup() {
   Serial.begin(9600);
